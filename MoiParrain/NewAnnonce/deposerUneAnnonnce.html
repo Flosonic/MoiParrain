@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+ 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ 		<meta http-equiv="Content-Language" content="fr" />
+ 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+ 		<meta name="author" content="Florent Puppo" />
+ 		<link rel='stylesheet'  href='deannonce.css'/>
+ 		<title>MoiParrain - Déposer une annonce</title>
+	</head>
+
+	<body>
+		<!--Menu nav-->
+		<nav class="navbar navbar-inverse navbar fixed-top navbar navbar-dark bg-primary">
+        <a class="navbar-brand" href="../Accueil/Menu.html">MoiParrain</a>
+      
+  			<div class="container-fluid">
+    			<ul class="nav navbar-nav">
+      				<li><a href="Menu.html"><span class="glyphicon glyphicon-home"></span> Accueil</a></li>
+      				<li class="active"><a href="../CarteFrance/France.html"><span class="glyphicon glyphicon-share"></span> Déposer une annonce</a></li>
+      				<li><a href="../Offres/Offres.html"><span class="glyphicon glyphicon-gift"></span> Offres</a></li>
+    			</ul>
+    			<ul class="nav navbar-nav navbar-right">
+      				<li><a href="../Inscription/inscription.html"><span class="glyphicon glyphicon-user"></span> Inscription</a></li>
+      				<li><a href="../Connexion/connexion.html"><span class="glyphicon glyphicon-log-in"></span> Connexion</a></li>
+    			</ul>
+  			</div>
+  </nav>
+
+<div class="maintext">
+  <strong><h1>Déposer votre annonce</h1></strong>
+  </div>
+<hr>
+<br> 
+
+<h3>Titre de l'annonce :</h3>
+<input class="text1" type="text" name="question:" size="50" maxlength="100"><br><br>
+
+<h3>Texte de l'annonce :</h3>
+<textarea class="text1" rows="4" cols="53">
+</textarea>
+
+<h3>Temps du Parrain :</h3>
+<input class="text1" type="text" name="question:" size="50" maxlength="100"><br><br>
+
+<h3>Champs d'actions :</h3>
+
+      <select class="text2" name="action">
+<option value="0">Choisissez le champ d'action</option>
+<option value="1" >Alsace</option>
+<option value="2" >Aquitaine</option>
+<option value="3" >Auvergne</option>
+<option value="4" >Basse-Normandie</option>
+<option value="5" >Bourgogne</option>
+<option value="6" >Bretagne</option>
+<option value="7" >Centre</option>
+<option value="8" >Champagne-Ardenne</option>
+<option value="9" >Corse</option>
+<option value="10" >Franche-Comté</option>
+<option value="11" >Haute-Normandie</option>
+<option value="12" >Ile-de-France</option>
+<option value="13" >Languedoc-Roussillon</option>
+<option value="14" >Limousin</option>
+<option value="15" >Lorraine</option>
+<option value="16" >Midi-Pyrénées</option>
+<option value="17" >Nord-Pas-de-Calais</option>
+<option value="18" >Pays de la Loire</option>
+<option value="19" >Picardie</option>
+<option value="20" >Poitou-Charentes</option>
+<option value="21" >Provence-Alpes-Côte d'Azur</option>
+<option value="22" >Rhône-Alpes</option>
+<option value="23" >Guadeloupe</option>
+<option value="24" >Martinique</option>
+<option value="25" >Guyane</option>
+<option value="26" >Réunion</option>
+ 
+      </select>
+
+<h3>Numéro de l'action choisi :</h3>
+
+      <select class="text3" name="action" id="action">
+<option value="0">Choisissez la numéro de l'action choisi</option>
+<option value="1" >1</option>
+<option value="2" >2</option>
+<option value="3" >3</option>
+<option value="4" >4</option>
+<option value="5" >5</option>
+<option value="6" >6</option>
+<option value="7" >7</option>
+<option value="8" >8</option>
+<option value="9" >9</option>
+<option value="10" >10</option>
+      </select>
+
+
+
+    <div class="adinput">
+      <b>Indiquez le code postal : </b>
+      <input name="zipcode" size="6" maxlength="5" type="text" value="" /><br />
+  
+<br />  
+<br />
+
+<br/>
+ 
+<h3>Régions</h3>
+  <select name="region" id="region">
+<option value="0">Choisissez la région</option>
+<option value="1" >Alsace</option>
+<option value="2" >Aquitaine</option>
+<option value="3" >Auvergne</option>
+<option value="4" >Basse-Normandie</option>
+<option value="5" >Bourgogne</option>
+<option value="6" >Bretagne</option>
+<option value="7" >Centre</option>
+<option value="8" >Champagne-Ardenne</option>
+<option value="9" >Corse</option>
+<option value="10" >Franche-Comté</option>
+<option value="11" >Haute-Normandie</option>
+<option value="12" >Ile-de-France</option>
+<option value="13" >Languedoc-Roussillon</option>
+<option value="14" >Limousin</option>
+<option value="15" >Lorraine</option>
+<option value="16" >Midi-Pyrénées</option>
+<option value="17" >Nord-Pas-de-Calais</option>
+<option value="18" >Pays de la Loire</option>
+<option value="19" >Picardie</option>
+<option value="20" >Poitou-Charentes</option>
+<option value="21" >Provence-Alpes-Côte d'Azur</option>
+<option value="22" >Rhône-Alpes</option>
+<option value="23" >Guadeloupe</option>
+<option value="24" >Martinique</option>
+<option value="25" >Guyane</option>
+<option value="26" >Réunion</option>
+ 
+      </select>
+    </div>
+ 
+    Choix :<br>
+<input type="radio" name="votre question 1"value="Yes">Offre<BR>
+<input type="radio" name="votre question 1"value="No">Demande<br>
+ 
+  <div class="labelform">
+        <label>Première photo</label>
+    </div>
+    <div class="adinput">
+      <input type="file" name="image" size="35" id="image" />
+<br>
+ 
+ 
+    <div id="err_image" style="display: none;">
+    <span class="error" id="err_msg_image"></span>
+    </div>
+ 
+    </div>
+<br>
+ 
+    <div class="labelform">
+        <label>Deuxièmes photo</label>
+    </div>
+    <div class="adinput">
+      <input type="file" name="image" size="35" id="image" />
+<br>
+ 
+    <div id="err_image" style="display: none;">
+    <span class="error" id="err_msg_image"></span>
+    </div>
+ 
+    </div>
+<br>
+<br>
+<br>
+ 
+<button type="submit" class="btn btn-success btn-lg" id="center">Envoyer</button><br><br>
+ 
+</form>
+
+<footer>
+Copyright &copy;2018 - Florent Puppo
+</footer>
+
+</body>
+</html>

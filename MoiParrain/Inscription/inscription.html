@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+ 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ 		<meta http-equiv="Content-Language" content="fr" />
+ 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ 		<meta name="author" content="Florent Puppo" />
+ 		<link rel='stylesheet'  href='inscription.css'/>
+ 		<title>MoiParrain - Inscription</title>
+	</head>
+
+	<body>
+		<!--Menu nav-->
+		<nav class="navbar navbar-inverse navbar fixed-top navbar navbar-dark bg-primary">
+        <a class="navbar-brand" href="../Accueil/Menu.html">MoiParrain</a>
+  			<div class="container-fluid">
+    			<ul class="nav navbar-nav">
+      				<li><a href="../Accueil/Menu.html"><span class="glyphicon glyphicon-home"></span> Accueil</a></li>
+      				<li><a href="../CarteFrance/France.html"><span class="glyphicon glyphicon-share"></span> Déposer une annonce</a></li>
+      				<li><a href="../Offres/Offres.html"><span class="glyphicon glyphicon-gift"></span> Offres</a></li>
+    			</ul>
+    			<ul class="nav navbar-nav navbar-right">
+      				<li class="active"><a href="../Inscription/inscription.html"><span class="glyphicon glyphicon-user"></span> Inscription</a></li>
+      				<li><a href="../Connexion/connexion.html"><span class="glyphicon glyphicon-log-in"></span> Connexion</a></li>
+    			</ul>
+  			</div>
+    </nav>
+
+  <!--Formulaire d'inscription-->
+  <br><br><h2>Veuillez vous Inscrire :</h2>
+  <center><h4>Vos Informations :</h4></center><br><br><br><br>
+
+  <div id="bloc">
+    <center><h3>Pourquoi créer un compte ?</h3></center>
+    <center><h4><span class="glyphicon glyphicon-eye-open"> Besoin</h4></center>
+    <p>Car vous avez besoin d'aide et la meilleure aide qui existe est de s'entourer de nouveaux amis</p>
+    <center><h4><span class="glyphicon glyphicon-heart"> Visibilité</h4></center>
+    <p>Suivez les statistiques de vos annonces et cela vous permet de postuler aux annonces d'autres personnes.</p>
+    <center><h4><span class="glyphicon glyphicon-warning-sign"> Important</h4></center>
+    <p>Vos informations ne seront pas utilisés à des fins commerciaux. Soyez rassurés ! </p>
+  </div>
+  
+  <form class="form-horizontal" action="">
+
+    <div class="form-group">    
+      <label class="control-label col-sm-2" for="civil">Civilité :</label>
+      <div class="col-sm-2">
+        <select class="form-control" id="sel1">
+          <option>M</option>
+          <option>Mme</option>
+          <option>Autre</option>
+        </select>
+      </div>
+
+
+
+      <label class="control-label col-sm-2" for="nom">Nom :</label>
+      <div class="col-sm-2">
+        <input type="nom" class="form-control" id="nom" placeholder="Nom">
+      </div>
+
+
+
+      <label class="control-label col-sm-2" for="Prénom">Prénom :</label>
+      <div class="col-sm-2">
+        <input type="Prénom" class="form-control" id="Prénom" placeholder="Prénom">
+      </div>
+
+
+
+      <label class="control-label col-sm-2" for="Adresse">Adresse :</label>
+      <div class="col-sm-2">
+        <input type="Adresse" class="form-control" id="Adresse" placeholder="Adresse">
+      </div>
+
+
+
+      <label class="control-label col-sm-2" for="codepostal">Code Postal :</label>
+      <div class="col-sm-2">
+        <input type="codepostal" class="form-control" id="codepostal" placeholder="Code Postal">
+      </div>
+
+
+
+      <label class="control-label col-sm-2" for="tel">Téléphone :</label>
+      <div class="col-sm-2">
+        <input type="tel" class="form-control" id="tel" placeholder="Numéro de Téléphone">
+      </div>
+    
+
+
+      <label class="control-label col-sm-2" for="email">Email :</label>
+      <div class="col-sm-2">
+        <input type="email" class="form-control" id="email" placeholder="Adresse Mail">
+      </div>
+
+
+
+      <label class="control-label col-sm-2" for="pwd">Mot de Passe :</label>
+      <div class="col-sm-2"> 
+        <input type="password" class="form-control" id="pwd" placeholder="Entrer un mot de passe">
+      </div>
+
+
+
+      <label class="control-label col-sm-2" for="description">Faites une description de vous (Optionel) :</label>
+      <div class="col-sm-2">
+        <textarea class="description"></textarea>
+      </div>
+    </div><br><br><br><br>
+
+  </form>
+  <button type="submit" class="btn btn-success btn-lg">Inscription</button>  
+
+</body>
+
+
+
+<!--Script Javascript-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+</html>

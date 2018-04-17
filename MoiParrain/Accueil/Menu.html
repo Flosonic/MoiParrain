@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+ 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ 		<meta http-equiv="Content-Language" content="fr" />
+ 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ 		<meta name="author" content="Florent Puppo" />
+ 		<link rel='stylesheet'  href='Menu.css'/>
+ 		<title>MoiParrain - Accueil</title>
+	</head>
+
+	<body>
+		<!--Menu nav-->
+		<nav class="navbar navbar-inverse navbar fixed-top navbar navbar-dark bg-primary">
+        <a class="navbar-brand" href="../Accueil/Menu.html">MoiParrain</a>
+      
+  			<div class="container-fluid">
+    			<ul class="nav navbar-nav">
+      				<li class="active"><a href="Menu.html"><span class="glyphicon glyphicon-home"></span> Accueil</a></li>
+      				<li><a href="../CarteFrance/France.html"><span class="glyphicon glyphicon-share"></span> Déposer une annonce</a></li>
+      				<li><a href="../Offres/Offres.html"><span class="glyphicon glyphicon-gift"></span> Offres</a></li>
+    			</ul>
+    			<ul class="nav navbar-nav navbar-right">
+      				<li><a href="../Inscription/inscription.html"><span class="glyphicon glyphicon-user"></span> Inscription</a></li>
+      				<li><a href="../Connexion/connexion.html"><span class="glyphicon glyphicon-log-in"></span> Connexion</a></li>
+    			</ul>
+  			</div>
+  </nav>
+
+<!--SlideShow-->
+  <div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="img/parrain2.jpg" style="width:1000px">
+
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img/parrain4.jpeg" style="width:1000px">
+
+  </div>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+
+  <!--Text d'intro-->
+ <br><br> <div class="row" id="test5">
+    <div class="col-sm-6">
+  <p><span class="glyphicon glyphicon-ok"></span><b>Intuitives :</b> partager le savoir-faire issu de vos compétences, de vos passions et de vos hobbies sans autre exigence que le plaisir de donner, de recevoir et d’aller vers l’autre</p>
+  <p><span class="glyphicon glyphicon-ok"></span><b>Fluides :</b> faire une seule action, passer d’une action à l’autre, mixer vos envies d’aventures solidaires au gré de vos envies</p>
+  <p><span class="glyphicon glyphicon-ok"></span><b>Non contraignantes :</b> soyez acteur d’une impulsion favorable autour de vous, sans conflit de temps, sans notion d’échec, dans un cadre souple et sécurisé</p>
+  <p>Un sourire, une main tendue, un savoir-faire partagé : quelques instants peuvent changer le cours d’une vie.
+
+Moi Parrain vous propose de mettre en action votre envie d’une société plus solidaire ou chacun donne et reçoit à mesure de son temps et de ses capacités.
+
+Rien de plus simple ! Rendez-vous sur l’onglet de votre choix et laissez-vous guider par les formules proposées.</p>
+  </div>
+
+    <img src="img/parrain3.png" width="auto" height="auto" class="parrain2" text="MoiParrain">
+
+<footer>
+Copyright &copy;2018 - Florent Puppo
+</footer>
+
+
+
+
+
+<!--Javascript-->
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2500); // Change image every 2 seconds
+}
+</script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+
+
